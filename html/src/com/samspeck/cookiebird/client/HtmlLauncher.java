@@ -3,7 +3,7 @@ package com.samspeck.cookiebird.client;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
-import com.samspeck.cookiebird.CookieBirdGame;
+import com.samspeck.cookiebird.CBGame;
 
 public class HtmlLauncher extends GwtApplication {
 
@@ -14,6 +14,6 @@ public class HtmlLauncher extends GwtApplication {
 
         @Override
         public ApplicationListener getApplicationListener () {
-                return new CookieBirdGame();
+                return new CBGame();
         }
 }
