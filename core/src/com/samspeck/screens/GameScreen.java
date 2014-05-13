@@ -1,10 +1,8 @@
-package com.samspeck.screens;
+package com.samspeck.Screens;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.Screen;
-import com.samspeck.logic.GameRenderer;
-import com.samspeck.logic.GameWorld;
+import com.samspeck.GameWorld.GameRenderer;
+import com.samspeck.GameWorld.GameWorld;
 
 public class GameScreen implements Screen {
     private GameWorld world;

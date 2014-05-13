@@ -1,4 +1,4 @@
-package com.samspeck.logic;
+package com.samspeck.GameWorld;
 
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;

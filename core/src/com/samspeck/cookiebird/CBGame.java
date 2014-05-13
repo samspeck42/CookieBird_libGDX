@@ -1,7 +1,7 @@
 package com.samspeck.cookiebird;
 
 import com.badlogic.gdx.Game;
-import com.samspeck.screens.GameScreen;
+import com.samspeck.Screens.GameScreen;
 
 public class CBGame extends Game {
     @Override
