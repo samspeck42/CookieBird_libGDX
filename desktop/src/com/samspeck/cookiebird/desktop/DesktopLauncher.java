@@ -7,6 +7,9 @@ import com.samspeck.cookiebird.CBGame;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
+        config.title = "CookieBird";
+        config.width = 272;
+        config.height = 408;
 		new LwjglApplication(new CBGame(), config);
 	}
 }
