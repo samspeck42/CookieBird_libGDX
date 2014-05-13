@@ -9,7 +9,8 @@ public class DesktopLauncher {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
         config.title = "CookieBird";
         config.width = 272;
-        config.height = 408;
+        config.height = 408
+        ;
 		new LwjglApplication(new CBGame(), config);
 	}
 }
