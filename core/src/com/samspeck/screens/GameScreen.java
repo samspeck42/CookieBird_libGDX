@@ -1,5 +1,7 @@
 package com.samspeck.Screens;
 
+import Helpers.InputHandler;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.samspeck.GameWorld.GameRenderer;
 import com.samspeck.GameWorld.GameWorld;
@@ -10,8 +12,18 @@ public class GameScreen implements Screen {
 
     public GameScreen() {
         System.out.println("GameScreen Attached");
-        world = new GameWorld(); // initialize world
+
+        float screenWidth = Gdx.graphics.getWidth();
+        float screenHeight = Gdx.graphics.getHeight();
+        float gameWidth = 136;
+        float gameHeight = screenHeight / (screenWidth / gameWidth);
+
+        int midPointY = (int)(gameHeight / 2);
+
+        world = new GameWorld(midPointY); // initialize world
         renderer = new GameRenderer(world); // initialize renderer
+
+        Gdx.input.setInputProcessor(new InputHandler(world.getBird()));
     }
 
     @Override
